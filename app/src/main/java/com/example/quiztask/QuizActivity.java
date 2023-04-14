@@ -71,11 +71,18 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 finish();
             }
         } else {
+
             if(clickedButton.getText().toString() == questions.get(Qindex).getCorrectAnsIndex()) {
                 checkAns(true);
                 clickedButton.setBackgroundResource(android.R.color.holo_green_light);
             } else {
                 checkAns(false);
+                for (int i = 0; i < answerBtn.length; i++){
+                    if(answerBtn[i].getText().toString() == questions.get(Qindex).getCorrectAnsIndex()) {
+                        answerBtn[i].setBackgroundResource(android.R.color.holo_green_light);
+                        clickedButton.setBackgroundResource(android.R.color.holo_red_light);
+                    }
+                }
             }
         }
         textViewRemQ.setText(Qindex+"/"+questions.size());
