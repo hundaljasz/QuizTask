@@ -108,9 +108,10 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     }
     private List<Question> loadQuestions() {
         List<Question> questions = new ArrayList<>();
-        questions.add(new Question("Here is a list of countries. Write against each of these the bloc they belonged to during the Cold War?", Arrays.asList("A","B","C","D"),"A"));
-        questions.add(new Question("Here is a list of countries. Write against each of these the bloc they belonged  War?", Arrays.asList("1","2","3","4"),"4"));
-        questions.add(new Question("Here is a list of countries. Write against belonged to during the Cold War?", Arrays.asList("1","2","3","4"),"2"));
+        questions.add(new Question("The ocean treaty “The High Seas Treaty” was agreed by all of the countries on?", Arrays.asList("4 January 2023","4 February 2023","4 March 2023","4 April 2023"),"4 March 2023"));
+        questions.add(new Question("Samarkand is a famous historical city. It is located in which country?", Arrays.asList("Russia","Tashkent","Uzbekistan","Kazakhstan"),"Uzbekistan"));
+        questions.add(new Question("The oldest news agency in the world is?", Arrays.asList("AFP","WAFA","BBC","CNN"),"AFP"));
+        questions.add(new Question("Qantas is an airline of which country?", Arrays.asList("Australia","Sudan","Malaysia","France"),"Australia"));
         return questions;
     }
 }
